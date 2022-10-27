@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button{
+    cursor: pointer;
+}
+
+button:active{
+    opacity: 0.7;
+}
+
+body{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.288),rgba(0, 0, 0, 0.288)), url(../Image/latest.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.logIn{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 0;
+    box-shadow: -5px 5px 10px;
+}
+
+.log-in-box{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+.log-in-box h1{
+    margin-bottom: 30px;
+    color: purple;
+}
+
+.input-box{
+    width: 300px;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 18px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    outline: none;
+
+}
+
+button{
+    width: 300px;
+    padding: 10px;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(128, 0, 128, 0.842);
+    border: none;
+    outline: none;
+    margin: 10px 0;
+    font-size: 15px;
+}
+
+.image-side{
+    background-image: linear-gradient(white,rgb(119, 38, 129));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    flex-flow: column nowrap;
+}
+
+.image-side h1{
+    transform: translateY(-40px);
+    font-family: Magneto;
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+}
+
+hr{
+    margin-top: 20px;
+    width: 250px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.or{
+    background-color: white;
+    width: 30px;
+    margin: -19px auto 10px;
+    text-align: center;
+}
+
+p{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.log-in-box h2 {
+    color: purple;
+    font-size: 80px;
+}
+
+.go-back{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 30px;
+    padding-right: 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 20px;
+    font-size: 25px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.go-back i{
+    transform: translateY(10px);
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateY(40px);
+    padding-right: 20px;
+    color: rgb(223, 223, 223);
+}
+
+.go-back h2{
+    padding-right: 30px;
+    color: rgb(223, 223, 223);
+}
+
+@media screen and (max-width: 770px){
+    .go-back, .image-side{
+        display: none;
+    }
+}
