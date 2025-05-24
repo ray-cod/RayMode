@@ -1,293 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="autor" content="Raimi Dikamona">
-    <title>Home page</title>
-    <link rel="stylesheet" href="../CSS/index.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Raimi Dikamona" />
+  <title>RayMode | Home</title>
+  <link rel="stylesheet" href="../CSS/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
 <body>
-
-    <!-- POP-UP -->
-
-    <div class="cart-dark-side">
-        <div class="cart-1">
-        <div class="cart-top">
-            <p>Number of items <span class="num">0</span> <span class="close close-2" id="close">+</span></p>
-            <hr>
-        </div>
-
-        <div class="cart-middle">
-            The cart is currently unavailable <br> Please LogIn to access the service 
-        </div>
-
-        <div class="cart-bottom">
-            <hr>
-            <div class="total">
-                <p><b>SUBTOTAL:</b></p>
-                <P class="cart-price">$00.00</P>
-            </div>
-            <button type="button">Checkout</button>
-        </div>
-    </div>
-    </div>
-
-    <!-- HEADER -->
     <header>
-        <section class="top_header">
-        <h1 class="logo">RayMode</h1>
-        <div class="menu">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li class="collection"><a class="col" href="About.html">About</a></li>
-                <li><a href="#Latest_trend">Latest style</a></li>
-                <li><a href="Shopping page.html">Shop</a></li>
-                <li><a href="logIn.html">LogIn</a></li>
-            </ul>
-            
-        </div>
-        <div class="men"><i class="fa fa-bars phone-menu"></i></div>
-        <span class="close-menu">+</span>
-    </section>
-        <div class="header_text">
-            <h1>On the apogee <br>of beauty</h1>
-            <p>What if you could go beyond <br> the edges of the possible</p>
-            <div class="fake_btn" id="discover-btn"><a href="#"><span></span> Discover</a></div>
-        </div>
+        <div class="logo">RayMode</div>
+        <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="#trends">Latest Style</a></li>
+            <li><a href="Shopping page.html">Shop</a></li>
+            <li><a href="logIn.html">LogIn</a></li>
+        </ul>
+        </nav>
     </header>
 
-    <body>
+    <section class="hero">
+        <h1>On the <span style="color: #6a0dad;">apogee</span> of beauty</h1>
+        <p>What if you could go beyond the edges of the possible</p>
+        <a href="#discover">Discover</a>
+    </section>
 
-        <!-- TOP SECTION -->
-
-    <section class="top-section">
-        <div class="top-row">
-            <div class="preferences">
-                <i class="fa fa-heart"></i>
-                <h3>preferences</h3>
-                <p>Lorem ipsum dolor <span class="cut-text">sit amet consectetur adipisicing elit. Repellat, quos rerum autem aperiam.</span></p>
-            </div>
-            <div class="separate"></div>
-            <div>
-                <i class="fa fa-shopping-cart" ></i>
-                <h3 id="cart-2">My cart</h3>
-                <p>Lorem ipsum dolor <span class="cut-text">sit amet consectetur adipisicing elit. Repellat, quos rerum autem aperiam.</span></p>
-            </div>
-            <div class="separate"></div>
-            <div>
-                <i class="fa fa-line-chart"></i>
-                <h3><a href="../HTML/About.html">Rates</a></h3>
-                <p>Lorem ipsum dolor <span class="cut-text">sit amet consectetur adipisicing elit. Repellat, quos rerum autem aperiam.</span></p>
-            </div>
+    <section class="section" id="about">
+        <h2>What We Offer</h2>
+        <div class="cards">
+        <div class="card">
+            <i class="fas fa-heart"></i>
+            <h3>Preferences</h3>
+            <p>Save your favorite styles and build a personalized fashion wishlist to revisit anytime.</p>
         </div>
-
-        <div class="bottom-row">
-            <div class="one-t">
-                <img src="" alt="">
-                <h3>Items on sold</h3>
-            </div>
-            <div class="two-t">
-                <img src="" alt="">
-                <h3>Latest items</h3>
-            </div>
-            <div class="three-t">
-                <img src="" alt="">
-                <h3>subjestion</h3>
-            </div>
+        <div class="card">
+            <i class="fas fa-shopping-cart"></i>
+            <h3>My Cart</h3>
+            <p>Keep track of your selected items with a secure and easy-to-manage shopping cart experience.</p>
+        </div>
+        <div class="card">
+            <i class="fas fa-chart-line"></i>
+            <h3>Rates</h3>
+            <p>Compare prices across brands and find the best deals on top-rated fashion items.</p>
+        </div>
         </div>
     </section>
 
-        <!-- section 1 -->
+    <!-- Latest Trends -->
 
-        <div class="section1">
+    <section class="white-section" id="trends">
+    <h2 class="section-title">Latest Trends</h2>
+    <p class="section-subtitle">Discover our most popular styles, handpicked by fashion experts.</p>
 
-        <div class="gray">
-        <h2 id="Latest_trend">Latest trend</h2>
-        <p class="p">Let's discover together what is new</p>
-    
-        <section class="Latest_trend" >
-            
-            <div class="latest_img"><img src="../Image/watch.webp" alt="watch"  ><div class="overlay"></div><div class="service-desc"><h3>Rolex Watch</h3><hr>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quo mollitia, nemo similique nam repudiandae vero explicabo maiores assumenda</p></div></div>
-
-            <div class="latest_img"><img src="../Image/sitting girl.jpg" alt="sitting girl"  ><div class="overlay"></div><div class="service-desc"><h3>Girls Fashion</h3><hr>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quo mollitia, nemo similique nam repudiandae vero explicabo maiores assumenda</p></div></div>
-
-            <div class="latest_img"><img src="../Image/four.jpg" alt="suit_man"  ><div class="overlay"></div><div class="service-desc"><h3>Evening suits</h3><hr>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quo mollitia, nemo similique nam repudiandae vero explicabo maiores assumenda</p></div></div>
-
-            <div class="latest_img"><img src="../Image/Adidas.png" alt="Adidas"  ><div class="overlay"></div><div class="service-desc"><h3>Adidas</h3><hr>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quo mollitia, nemo similique nam repudiandae vero explicabo maiores assumenda
-                </p></div></div>
-        </section>
-    </div>
-        
-    <!-- sponsor -->
-
-    <section class="sponsor">
-        <h2>Sponsors</h2>
-        
-        <p class="ps">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quo mollitias inventore velit.</p>
-
-        <div class="sponsor_list">
-            <div>
-                <img src="../Image/pngwing.com.png" alt="amazon" width="100px">
-            </div>
-            <div>
-                <img src="../Image/pngwing.com (1).png" alt="chanel" width="100px">               
-            </div>
-            <div>
-                <img src="../Image/pngwing.com (2).png" alt="puma" width="100px">               
-            </div>
-            <div>
-                <img src="../Image/pngwing.com (3).png" alt="adidas" width="100px">
-            </div>
-            <div>
-                <img src="../Image/pngwing.com (4).png" alt="converse" width="100px">
+    <div class="trend-grid">
+        <article class="trend-card">
+        <div class="trend-image">
+            <img src="../Image/watch.webp" alt="Rolex Watch" />
+            <div class="trend-info">
+            <h3>Rolex Watch</h3>
+            <p>Experience timeless luxury with the latest Rolex collection.</p>
+            <a href="#" class="trend-link">Explore Now</a>
             </div>
         </div>
+        </article>
+
+        <article class="trend-card">
+        <div class="trend-image">
+            <img src="../Image/sitting girl.jpg" alt="Girls Fashion" />
+            <div class="trend-info">
+            <h3>Girls Fashion</h3>
+            <p>Trendy and bold: explore the newest picks in women's wear.</p>
+            <a href="#" class="trend-link">Shop Looks</a>
+            </div>
+        </div>
+        </article>
+
+        <article class="trend-card">
+        <div class="trend-image">
+            <img src="../Image/four.jpg" alt="Evening Suits" />
+            <div class="trend-info">
+            <h3>Evening Suits</h3>
+            <p>Elevate your elegance with premium formalwear for all occasions.</p>
+            <a href="#" class="trend-link">View Collection</a>
+            </div>
+        </div>
+        </article>
+
+        <article class="trend-card">
+        <div class="trend-image">
+            <img src="../Image/Adidas.png" alt="Adidas Shoes" />
+            <div class="trend-info">
+            <h3>Adidas</h3>
+            <p>Sport meets street with Adidas' latest lifestyle sneakers.</p>
+            <a href="#" class="trend-link">Browse Now</a>
+            </div>
+        </div>
+        </article>
+    </div>
+    </section>
+
+
+    <!-- Sponsors section -->
+
+    <section class="section" id="sponsor">
+    <h2 class="section-title">Sponsors</h2>
+    <div class="carousel-wrapper">
+        <div class="sponsor-carousel">
+        <div class="sponsor-logo"><img src="../Image/pngwing.com.png" alt="Amazon" /></div>
+        <div class="sponsor-logo"><img src="../Image/pngwing.com (1).png" alt="Chanel" /></div>
+        <div class="sponsor-logo"><img src="../Image/pngwing.com (2).png" alt="Puma" /></div>
+        <div class="sponsor-logo"><img src="../Image/pngwing.com (3).png" alt="Adidas" /></div>
+        <div class="sponsor-logo"><img src="../Image/pngwing.com (4).png" alt="Converse" /></div>
+
+        <div class="sponsor-logo"><img src="../Image/pngwing.com.png" alt="Amazon" /></div>
+        <div class="sponsor-logo"><img src="../Image/pngwing.com (1).png" alt="Chanel" /></div>
+        <div class="sponsor-logo"><img src="../Image/pngwing.com (2).png" alt="Puma" /></div>
+        <div class="sponsor-logo"><img src="../Image/pngwing.com (3).png" alt="Adidas" /></div>
+        <div class="sponsor-logo"><img src="../Image/pngwing.com (4).png" alt="Converse" /></div>
+        </div>
+    </div>
     </section>
 
     <!-- our secvices -->
 
-    <section class="services">
-    <h2>Our services</h2>
-    <hr class="serve_line">
+    <section class="white-section" id="services">
+    <h2 class="section-title">Our Services</h2>
+    <hr class="serve-line" />
 
-    <div class="service_list">
-    <div class="service_item">
+    <div class="service-list">
+        <div class="service-item">
         <div class="icon">
-        <i class="fa fa-shopping-bag"></i>
-    </div>
-        <h3>Favory</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="service-span">Magnam possimus veniam repellat? Veniam alias necessitatibus velit.</span></p>
-    </div>
-
-    <div class="service_item">
-        <i class="fa fa-phone"></i>
-        <h3>Client support</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="service-span">Magnam possimus veniam repellat? Veniam alias necessitatibus velit.</span></p>
-    </div>
-
-    <div class="service_item">
-        <i class="fa fa-credit-card"></i>
-        <h3>latest purchase</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="service-span">Magnam possimus veniam repellat? Veniam alias necessitatibus velit.</span></p>
-    </div>
-
-    <div class="service_item">
-        <i class="fa fa-users"></i>
-        <h3>User guide</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="service-span">Magnam possimus veniam repellat? Veniam alias necessitatibus velit.</span></p>
-    </div>
-
-</div>
-</section>
-
-    <!-- comment -->
-
-    <section class="comment"></section>
-    <h2>Comments</h2>
-    <p class="p">What customers think</p>
-
-    <div class="comment-row">
-        <div class="comment-column">
-            <div class="user">
-                <img src="../Image/face.jpg" alt="">
-                <div class="user-info">
-                    <h4>VAN PERRY <i class="fa fa-twitter"></i></h4>
-                    <small>@vanperry</small>
-                </div>
-            </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro explicabo enim quisquam atque. Repellendus odit quae, beatae quod blanditiis eos totam perspiciatis illo ipsam repellat voluptates nulla ut in magni?</p>
+            <i class="fa fa-shopping-bag" aria-hidden="true"></i>
         </div>
-        <div class="comment-column">
-            <div class="user">
-                <img src="../Image/face2.jpg" alt="">
-                <div class="user-info">
-                    <h4>PETTER TAYLOR <i class="fa fa-twitter"></i></h4>
-                    <small>@pettertaylor</small>
-                </div>
-            </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro explicabo enim quisquam atque. Repellendus odit quae, beatae quod blanditiis eos totam perspiciatis illo ipsam repellat voluptates nulla ut in magni?</p>
+        <h3>Favorites</h3>
+        <p>Create and manage a list of your favorite items to quickly access them anytime you shop.</p>
         </div>
-        <div class="comment-column">
-            <div class="user">
-                <img src="../Image/gface.jpg" alt="">
-                <div class="user-info">
-                    <h4>ALICIA MORGAN <i class="fa fa-twitter"></i></h4>
-                    <small>@aliciamorgan</small>
-                </div>
-            </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro explicabo enim quisquam atque. Repellendus odit quae, beatae quod blanditiis eos totam perspiciatis illo ipsam repellat voluptates nulla ut in magni?</p>
+
+        <div class="service-item">
+        <div class="icon">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+        </div>
+        <h3>Client Support</h3>
+        <p>Our support team is available 24/7 to help you with questions, orders, or returns.</p>
+        </div>
+
+        <div class="service-item">
+        <div class="icon">
+            <i class="fa fa-credit-card" aria-hidden="true"></i>
+        </div>
+        <h3>Last Purchase</h3>
+        <p>Instantly view and reorder items from your last purchase history for quick checkout.</p>
+        </div>
+
+        <div class="service-item">
+        <div class="icon">
+            <i class="fa fa-users" aria-hidden="true"></i>
+        </div>
+        <h3>User Guide</h3>
+        <p>Access detailed step-by-step guides and tutorials to help you make the most of our platform.</p>
         </div>
     </div>
+    </section>
 
-    <!-- DEVELOPER -->
+    <!-- testimonies -->
 
-    <section class="designer-info">
-        <h2>Designer info</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti perferendis obcaecati sunt eligendi dolorem labore sapiente officiis saepe ad praesentium aut sed optio voluptas, quam amet? Sunt qui atque iure? Corrupti perferendis obcaecati sunt eligendi dolorem labore sapiente officiis saepe ad praesentium aut sed optio voluptas, quam amet? Sunt qui atque iure.</p>
-        <img src="../Image/keep.png" alt="profil" width="200">
+    <section class="section" id="testimonies">
+    <h2 class="section-title">What Customers Say</h2>
+
+    <div class="testimonial-grid">
+        <article class="testimonial-card">
+        <div class="user-profile">
+            <img src="../Image/face.jpg" alt="Portrait of Van Perry" />
+            <div class="user-info">
+            <h4>Van Perry <i class="fa fa-twitter" aria-hidden="true"></i></h4>
+            <small>@vanperry</small>
+            </div>
+        </div>
+        <p>
+            I’ve never had such a seamless online shopping experience. The styles are fresh,
+            and the checkout process was incredibly fast. Highly recommend!
+        </p>
+        </article>
+
+        <article class="testimonial-card">
+        <div class="user-profile">
+            <img src="../Image/face2.jpg" alt="Portrait of Petter Taylor" />
+            <div class="user-info">
+            <h4>Petter Taylor <i class="fa fa-twitter" aria-hidden="true"></i></h4>
+            <small>@pettertaylor</small>
+            </div>
+        </div>
+        <p>
+            Customer service is top-tier. I had an issue with sizing and they resolved it
+            within a day. I'm definitely coming back for more.
+        </p>
+        </article>
+
+        <article class="testimonial-card">
+        <div class="user-profile">
+            <img src="../Image/gface.jpg" alt="Portrait of Alicia Morgan" />
+            <div class="user-info">
+            <h4>Alicia Morgan <i class="fa fa-twitter" aria-hidden="true"></i></h4>
+            <small>@aliciamorgan</small>
+            </div>
+        </div>
+        <p>
+            The product quality exceeded my expectations. The packaging, the fit, the fabric, everything felt premium.
+        </p>
+        </article>
+    </div>
+    </section>
+
+    <!-- Developer -->
+
+    <section class="white-section" id="developer">
+    <h2 class="section-title">Meet the Developer</h2>
+    <div class="developer-content">
+        <img src="../Image/profile.png" alt="Portrait of Raimi Dikamona" class="developer-photo" />
+        <div class="developer-bio">
+        <p>
+            Raimi Dikamona is a passionate software developer dedicated to crafting clean, efficient, and user-focused digital experiences. With a strong foundation in web and mobile development, he specializes in building responsive interfaces, optimizing performance, and delivering scalable solutions. Driven by curiosity and a love for learning, Raimi constantly explores new technologies.
+        </p>
         <h3>Raimi Dikamona</h3>
         <small>@raydevelopment</small>
-    </section>
-
-    <!-- WRITE YOUR COMMENT -->
-    <h2>Leave a comment</h2>
-    <P class="p">Help us improving our content</P>
-    <section class="leave-comment">
-        
-        <div class="user-details">
-            
-            <input type="text" name="Name" id="name" placeholder="Your name">
-            <input type="text" name="Surname" id="surname" placeholder="Your surname">
-            <input type="email" name="Email" id="email" placeholder="Your email">
-            <button type="submit">Post</button>
-        </div>
-        <div class="write-comment">
-            
-            <textarea name="Comment" id="comment" cols="30" rows="10" placeholder="Enter your comment here"></textarea>
-        </div>
-    </section>
-    </body>
-
-    <footer>
-        
-        <div class="one">
-            <ul>
-                <h1 class="logo">RayMode</h1>
-                <div class="short-line"></div>
-                <li><a href="#">Home</a></li>
-                <li><a href="#Latest_trend">Latest style</a></li>
-                <li><a href="../HTML/Shopping page.html">Shop</a></li>
-                <li><a href="About.html">About</a></li>
-            </ul>
-
-            <p>Be a part of our community &ThickSpace; 
-                <span class="media"><a href="#"><i class="fa fa-facebook-square"></i></a> &ThickSpace;
-                <a href="#"><i class="fa fa-instagram"></i></a> &ThickSpace;
-                <a href="#"><i class="fa fa-whatsapp"></i></a> &ThickSpace; 
-                <a href="#"><i class="fa fa-twitter"></i></a></span>
-            </p>
-        </div>
-        <div class="line"></div>
-        <div class="two">
-            <p class="wrap_text"> <span class="footer-span">"We made passion our raw material" </span> <br> <br>
-            Pellentesque interdum est lobortis purus porttitor fermentum. Vivamus suscipit diam eros, vel faucibus eros laoreet a. Donec porta ipsum viverra dignissim facilisis. Sed id accumsan ex. Curabitur imperdiet ipsum ac blandit faucibus. Etiam ullamcorper consequat tincidunt. Fusce nulla nibh, euismod at quam eget, venenatis convallis libero. Mauris ultricies et dolor eget cursus.</p>
-        <div>
-            <p class="sign-line">Sign up to our newsletter and get 10% off this purchase</p>
-            <input type="text" title="Email" id="Email" placeholder="Enter your email">
-            <button>GET 10% OFF</button>
-            <P>Designed by Raimi . Copyright © All Rights Reserved <br> Powered by Webflow    Style Guide    Licenses    Instructions</P>
         </div>
     </div>
+    </section>
 
-    </footer>
+    <!-- Comment -->
+    
+    <section class="section" id="comment">
+    <h2 class="section-title">Leave a Comment</h2>
 
-    <script src="../Javascript/index.js"></script>
-</body>
+    <form class="comment-form" action="#" method="post">
+        <div class="form-fields">
+        <div class="form-group">
+            <label for="name" class="visually-hidden">First Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+        </div>
+
+        <div class="form-group">
+            <label for="surname" class="visually-hidden">Surname</label>
+            <input type="text" id="surname" name="surname" placeholder="Your surname" required />
+        </div>
+
+        <div class="form-group">
+            <label for="email" class="visually-hidden">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your email" required />
+        </div>
+        </div>
+
+        <div class="form-group full-width">
+        <label for="message" class="visually-hidden">Comment</label>
+        <textarea id="message" name="message" rows="6" placeholder="Enter your comment here" required></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Post</button>
+    </form>
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-brand">
+      <h3 class="brand-name">RayMode</h3>
+      <p class="brand-tagline">Fashion meets elegance. Be bold. Be timeless.</p>
+    </div>
+
+    <div class="footer-links">
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#trends">Trends</a></li>
+          <li><a href="#shop">Shop</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Shipping & Returns</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Follow Us</h4>
+        <nav class="social-links" aria-label="Social Media">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2023 <span style="color: #6a0dad;">Raimi Dikamona</span>. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+    </body>
 </html>
