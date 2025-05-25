@@ -176,21 +176,21 @@ header i{
 
 .collection div:nth-child(2){
     background-color: rgb(80, 0, 80);
-    background-image: url(../image/clothes.png);
+    background-image: url(../Image/clothes.png);
     background-size: 270px;
     background-repeat: no-repeat;
     background-position: 150px 20px;
 }
 
 .collection div:nth-child(1){
-    background-image: url(../image/pngwing.com\ \(5\).png);
+    background-image: url(../Image/pngwing.com\ \(5\).png);
     background-size: 270px;
     background-repeat: no-repeat;
     background-position: 170px 1px;
 }
 
 .collection div:nth-child(3){
-    background-image: url(../image/pngwing.com\ \(6\).png);
+    background-image: url(../Image/pngwing.com\ \(6\).png);
     background-size: 270px;
     background-repeat: no-repeat;
     background-position: 170px 1px;
@@ -265,32 +265,32 @@ header i{
 }
 
 .box .p1{
-    background-image: url(../image/girl-short.jpeg);
+    background-image: url(../Image/girl-short.jpeg);
     background-size: cover;
 }
 
 .box .p2{
-    background-image: url(../image/girl-shoes.png);
+    background-image: url(../Image/girl-shoes.png);
     background-size: cover;
 }
 
 .box .p3{
-    background-image: url(../image/pullover.jpg);
+    background-image: url(../Image/pullover.jpg);
     background-size: cover;
 }
 
 .box .p4{
-    background-image: url(../image/girl-pants.jpeg);
+    background-image: url(../Image/girl-pants.jpeg);
     background-size: cover;
 }
 
 .box .p5{
-    background-image: url(../image/women-bag-png-20694.png);
+    background-image: url(../Image/women-bag-png-20694.png);
     background-size: cover;
 }
 
 .box .p6{
-    background-image: url(../image/boy-shoes.png);
+    background-image: url(../Image/boy-shoes.png);
     background-size: cover;
     background-position: -30px 0px;
 }
@@ -382,40 +382,40 @@ header i{
 }
 
 .p1{
-    background-image: url(../image/girl-shoes--.png);
+    background-image: url(../Image/girl-shoes--.png);
     background-size: cover;
     background-position: -20px 0px;
 }
 
 .p2{
-    background-image: url(../image/watch-png-25011.png);
+    background-image: url(../Image/watch-png-25011.png);
     background-size: cover;
 }
 
 .p3{
-    background-image: url(../image/women-bag-png-20703.png);
+    background-image: url(../Image/women-bag-png-20703.png);
     background-size: cover;
 }
 
 .p4{
-    background-image: url(../image/shoes-17793.png);
+    background-image: url(../Image/shoes-17793.png);
     background-size: cover;
 }
 
 .p5{
-    background-image: url(../image/pullover--.png);
+    background-image: url(../Image/pullover--.png);
     background-size: cover;
 }
 
 .p6{
-    background-image: url(../image/woman-transparent-png-14.png);
+    background-image: url(../Image/woman-transparent-png-14.png);
     background-size: cover;
 }
 
 /* FLYER */
 
 .flyer{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../image/flyer.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../Image/flyer.jpg);
     width: 100%;
     height: 400px;
     background-size: 1350px;
@@ -474,7 +474,7 @@ button:hover span {
 }
 
 .side-img .rectangle{
-    background-image: url(../image/quality.jpg);
+    background-image: url(../Image/quality.jpg);
     background-size: cover;
     background-position: 0px -40px;
     width: 400px;
@@ -532,7 +532,7 @@ button:hover span {
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 3;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),  url(../image/one.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),  url(../Image/one.jpg);
     background-size: cover;
     padding: 40px;
     color: white;
@@ -556,27 +556,27 @@ button:hover span {
 .di:nth-child(4){
     grid-column-start: 1;
     grid-column-end: 3;
-    background-image: url(../image/three.jpg);
+    background-image: url(../Image/three.jpg);
     background-size: cover;
 }
 
 .di:nth-child(2){
-    background-image: url(../image/two.jpg);
+    background-image: url(../Image/two.jpg);
     background-size: cover;
 }
 
 .di:nth-child(3){
-    background-image: url(../image/four.jpg);
+    background-image: url(../Image/four.jpg);
     background-size: cover;
 }
 
 .di:nth-child(5){
-    background-image: url(../image/five.jpg);
+    background-image: url(../Image/five.jpg);
     background-size: cover;
 }
 
 .di:nth-child(6){
-    background-image: url(../image/six.jpg);
+    background-image: url(../Image/six.jpg);
     background-size: cover;
 }
 
