@@ -52,13 +52,17 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  height: 80px;
 }
 
 .logo {
   font-size: 1.8rem;
   font-weight: 700;
   color: #222;
+}
+
+.main-nav {
+    display: flex;
+    flex-direction: row;
 }
 
 .main-nav ul {
@@ -77,15 +81,14 @@ header {
 }
 
 .cart-toggle {
-  background: #222;
-  color: #fff;
-  padding: 0.6rem 1rem;
-  border-radius: 50px;
+  color: black;
+  font-size: 1.2rem;
   transition: background 0.3s ease;
 }
 
 .cart-toggle:hover {
-  background: #444;
+  color: #444;
+  cursor: pointer;
 }
 
 .fa-shopping-cart {
@@ -336,7 +339,7 @@ header {
   display: none;
   justify-content: center;
   align-items: center;
-  z-index: 999;
+  z-index: 1200;
 }
 
 .modal-window {
@@ -429,9 +432,9 @@ header {
 .cart-sidebar {
   position: fixed;
   right: -400px;
-  top: 80px; /* start below header */
+  top: 0;
   width: 350px;
-  height: calc(100% - 80px); /* fill the rest */
+  height: 100%;
   background: #fff;
   box-shadow: -2px 0 10px rgba(0,0,0,0.1);
   padding: 2rem;
@@ -439,12 +442,33 @@ header {
   display: flex;
   flex-direction: column;
   transition: right 0.3s ease;
-  overflow-y: auto;
+}
+
+.cart-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  display: none;
+  z-index: 1050; /* between header and cart sidebar */
 }
 
 
 .cart-sidebar.active {
   right: 0;
+}
+
+.cart-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  display: none;
+  z-index: 1050; /* between header and cart sidebar */
 }
 
 .cart-header {
