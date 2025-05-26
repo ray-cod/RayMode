@@ -101,7 +101,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 4rem 3rem;
-  background: linear-gradient(135deg, #fff, #f1f1f1);
+  background: #f1f1f1;
   flex-wrap: wrap;
 }
 

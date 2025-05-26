@@ -2,6 +2,7 @@
 const cartToggleBtn = document.querySelector(".cart-toggle");
 const cartSidebar = document.getElementById("cart-sidebar");
 const closeCartBtn = document.querySelector(".close-cart");
+const cartOverlay = document.querySelector(".cart-overlay");
 
 cartToggleBtn.addEventListener("click", () => {
   cartSidebar.classList.add("active");
@@ -71,3 +72,22 @@ cartButtons.forEach(btn => {
     itemCount.textContent = currentCount + 1;
   });
 });
+
+
+
+cartToggleBtn.addEventListener("click", () => {
+  cartSidebar.classList.add("active");
+  cartOverlay.style.display = "block";
+});
+
+closeCartBtn.addEventListener("click", () => {
+  cartSidebar.classList.remove("active");
+  cartOverlay.style.display = "none";
+});
+
+// Optional: close cart if overlay is clicked
+cartOverlay.addEventListener("click", () => {
+  cartSidebar.classList.remove("active");
+  cartOverlay.style.display = "none";
+});
+
