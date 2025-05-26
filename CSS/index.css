@@ -87,7 +87,7 @@ strong {
   color: #000000;
 }
 
-
+/* Hero */
 
     .hero {
       background: url('../Image/header-image.jpg') no-repeat center center/cover;
@@ -124,7 +124,7 @@ strong {
     }
 
     .hero a:hover {
-      background-color: #1b1b1b;
+      background-color: #e04a43;
     }
 
     .section {
