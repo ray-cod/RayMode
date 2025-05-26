@@ -793,10 +793,6 @@ header {
     justify-content: center;
   }
 
-  .cart-sidebar {
-    width: 100%;
-  }
-
   .promo-grid {
     grid-template-columns: 1fr;
   }
