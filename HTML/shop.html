@@ -1,353 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="autor" content="Raimi Dikamona">
-    <title>shop</title>
-    <link rel="stylesheet" href="../CSS/shop.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Raimi Dikamona" />
+  <title>Shop | RayMode</title>
+  <link rel="stylesheet" href="../CSS/shop.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
 <body>
 
-    <!-- POP-UP -->
+  <!-- Product Modal -->
+  <div class="modal-overlay" id="product-modal">
+    <div class="modal-window">
+      <button class="modal-close" aria-label="Close">&times;</button>
+      <img src="../Image/placeholder.jpg" id="modal-img" alt="Selected product" width="300" height="300" />
+      <div class="modal-info">
+        <h2>Product Name</h2>
+        <p class="price"><del>$360.00</del> <strong>$250.00</strong></p>
+        <p class="description">
+          Detailed description of the product goes here. Highlight features and selling points.
+        </p>
+        <div class="quantity-controls">
+          <button type="button" aria-label="Decrease quantity">-</button>
+          <span class="num-item">1</span>
+          <button type="button" aria-label="Increase quantity">+</button>
+          <button type="button" class="cart-btn">Add to Cart</button>
+        </div>
+        <p class="slogan">Road to perfection</p>
+      </div>
+    </div>
+  </div>
 
-    <div class="dark-side">
-        <div class="window">
-            <p class="close" id="close">+</p>
-            <img src="../Image/placeholder.jpg" id="img-change" alt="" width="300px" height="300px">
-            <div class="pop-text">
-                <h2>Name of the item</h2>
-                <p class="price"><strike>$360.00</strike> &ThickSpace; <b>$250.00</b></p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid magni libero perspiciatis laudantium, delectus veniam incidunt fuga, a fugiat eveniet distinctio mollitia? Praesentium, quaerat. Rerum perferendis alias nemo distinctio iste.</p>
-                <div>
-                    <button type="button">-</button>
-                    <p class="num-item">1</p>
-                    <button type="button">+</button>
-                    <button type="button" class="cart-btn">Add to cart</button>
-                </div>
-                <p>Road to perfection</p>
+  <!-- Cart Sidebar -->
+  <aside class="cart-sidebar" id="cart-sidebar">
+    <div class="cart-header">
+      <p>Items in cart: <span class="item-count">0</span></p>
+      <button class="close-cart" aria-label="Close Cart">&times;</button>
+    </div>
+    <div class="cart-body">
+      <p>The cart is currently unavailable.<br />Please log in to access the service.</p>
+    </div>
+    <div class="cart-footer">
+      <div class="subtotal">
+        <strong>Subtotal:</strong>
+        <span class="cart-total">$0.00</span>
+      </div>
+      <button type="button" class="checkout-btn">Checkout</button>
+    </div>
+  </aside>
+
+  <!-- Header -->
+  <header>
+    <h1 class="logo">RayMode</h1>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#flyer">Comment</a></li>
+        <li><a href="../HTML/About.html">Contact</a></li>
+        <li><a href="logIn.html">LogIn</a></li>
+      </ul>
+      <button class="cart-toggle" aria-label="Open cart"><i class="fa fa-shopping-cart"></i></button>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-text">
+        <h2>Get Back New</h2>
+        <p>Explore our shop and all the wonders it has to offer.</p>
+      </div>
+      <div class="hero-image">
+        <img src="../Image/kindpng_1616862.png" alt="Model with products" width="500" />
+      </div>
+    </section>
+
+    <!-- Collections -->
+    <section class="section">
+      <h2>Collections</h2>
+      <p>Select the type of item you're looking for</p>
+      <div class="collection-grid">
+        <article>
+          <h3>Shoes</h3>
+          <p>Discover comfort and style with our exclusive footwear line.</p>
+        </article>
+        <article>
+          <h3>Clothes</h3>
+          <p>From casual to formal, our clothing collection fits all occasions.</p>
+        </article>
+        <article>
+          <h3>Suits</h3>
+          <p>Elevate your wardrobe with our premium suits tailored to impress.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Shop Filters & Items -->
+    <section class="shop-section">
+
+      <!-- Sidebar -->
+      <aside class="shop-sidebar">
+        <div class="filter-box">
+          <input type="text" placeholder="Search products..." class="search-input" />
+          <button type="button" class="search-btn"><i class="fa fa-search"></i></button>
+
+          <h3>Filter by Price</h3>
+          <input type="range" min="50" max="5000" />
+          <p>Price: $50 - $5000</p>
+          <button type="button" class="filter-btn">Apply</button>
+        </div>
+
+        <div class="sidebar-section">
+          <h3>On Sale</h3>
+          <!-- Repeat for each item -->
+          <div class="mini-product">
+            <div class="img-side p1"></div>
+            <div>
+              <h4>Name of the item</h4>
+              <p><del>$360.00</del> <strong>$250.00</strong></p>
             </div>
-        </div>
-    </div>
-
-    <div class="cart-dark-side">
-        <div class="cart-1">
-        <div class="cart-top">
-            <p>Number of items <span class="num">0</span> <span class="close close-2" id="close">+</span></p>
-            <hr>
+          </div>
+          <!-- End repeat -->
         </div>
 
-        <div class="cart-middle">
-            The cart is currently unavailable <br> Please LogIn to access the service 
+        <div class="sidebar-section">
+          <h3>Popular Picks</h3>
+          <!-- Same mini-product structure -->
         </div>
 
-        <div class="cart-bottom">
-            <hr>
-            <div class="total">
-                <p><b>SUBTOTAL:</b></p>
-                <P class="cart-price">$00.00</P>
-            </div>
-            <button type="button">Checkout</button>
+        <div class="sidebar-section">
+          <h3>Advertisement</h3>
+          <iframe width="336" height="189" src="https://www.youtube.com/embed/hOWOJ5oVwUQ" title="Product Promo Video" frameborder="0" allowfullscreen></iframe>
         </div>
-    </div>
-    </div>
+      </aside>
 
-    <!-- HEADER -->
-    
-    <header>
+      <!-- Product Grid -->
+      <section class="product-grid">
+        <!-- Repeat this block for each product -->
+        <div class="product-card">
+          <div class="picture p1"></div>
+          <h3>Product Name</h3>
+          <div class="stars">
+            <i class="fa fa-star"></i><i class="fa fa-star"></i>
+            <i class="fa fa-star"></i><i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>$250.00</p>
+        </div>
+        <!-- End repeat -->
 
-        <h1>RayMode</h1>
-        <div class="menu">
-        <ul>
+         <!-- Repeat this block for each product -->
+        <div class="product-card">
+          <div class="picture p1"></div>
+          <h3>Product Name</h3>
+          <div class="stars">
+            <i class="fa fa-star"></i><i class="fa fa-star"></i>
+            <i class="fa fa-star"></i><i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>$250.00</p>
+        </div>
+        <!-- End repeat -->
+
+        <!-- Repeat this block for each product -->
+        <div class="product-card">
+          <div class="picture p1"></div>
+          <h3>Product Name</h3>
+          <div class="stars">
+            <i class="fa fa-star"></i><i class="fa fa-star"></i>
+            <i class="fa fa-star"></i><i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>$250.00</p>
+        </div>
+        <!-- End repeat -->
+
+        <!-- Repeat this block for each product -->
+        <div class="product-card">
+          <div class="picture p1"></div>
+          <h3>Product Name</h3>
+          <div class="stars">
+            <i class="fa fa-star"></i><i class="fa fa-star"></i>
+            <i class="fa fa-star"></i><i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>$250.00</p>
+        </div>
+        <!-- End repeat -->
+
+        <!-- Repeat this block for each product -->
+        <div class="product-card">
+          <div class="picture p1"></div>
+          <h3>Product Name</h3>
+          <div class="stars">
+            <i class="fa fa-star"></i><i class="fa fa-star"></i>
+            <i class="fa fa-star"></i><i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>$250.00</p>
+        </div>
+        <!-- End repeat -->
+
+        <!-- Repeat this block for each product -->
+        <div class="product-card">
+          <div class="picture p1"></div>
+          <h3>Product Name</h3>
+          <div class="stars">
+            <i class="fa fa-star"></i><i class="fa fa-star"></i>
+            <i class="fa fa-star"></i><i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>$250.00</p>
+        </div>
+        <!-- End repeat -->
+
+        <!-- Repeat this block for each product -->
+        <div class="product-card">
+          <div class="picture p1"></div>
+          <h3>Product Name</h3>
+          <div class="stars">
+            <i class="fa fa-star"></i><i class="fa fa-star"></i>
+            <i class="fa fa-star"></i><i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>$250.00</p>
+        </div>
+        <!-- End repeat -->
+
+        <!-- Repeat this block for each product -->
+        <div class="product-card">
+          <div class="picture p1"></div>
+          <h3>Product Name</h3>
+          <div class="stars">
+            <i class="fa fa-star"></i><i class="fa fa-star"></i>
+            <i class="fa fa-star"></i><i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>$250.00</p>
+        </div>
+        <!-- End repeat -->
+      </section>
+    </section>
+
+    <!-- User Feedback -->
+    <section class="feedback" id="flyer">
+      <h2>Tell Us About Your Experience</h2>
+      <p>We value your feedback and use it to improve your shopping experience.</p>
+      <button class="feedback-btn" id="open-feedback">Leave a Comment</button>
+    </section>
+
+    <!-- Feature Highlight -->
+    <section class="highlight">
+      <div class="highlight-image"></div>
+      <div class="highlight-text">
+        <h2>Quest to Quality</h2>
+        <p>We’re committed to offering top-quality fashion pieces crafted with attention and care. Discover the details behind every item you love.</p>
+      </div>
+    </section>
+
+    <!-- Grid Section -->
+    <section class="promo-grid">
+      <article>
+        <h3>Summer Collection</h3>
+        <p>Brighten your wardrobe with vibrant styles made for the season.</p>
+      </article>
+      <div class="di"></div>
+      <div class="di"></div>
+      <div class="di"></div>
+      <div class="di"></div>
+      <div class="di"></div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <h2 class="logo">RayMode</h2>
+        <nav>
+          <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="#flyer">Comment</a></li>
             <li><a href="../HTML/About.html">Contact</a></li>
             <li><a href="logIn.html">LogIn</a></li>
-        </ul>
-
-        <div class="cart">
-        <span class="hide-cart"><i class="fa fa-shopping-cart" id="cart"></i></span>
-        </div></div>
-        <div class="men"><i class="fa fa-bars phone-menu"></i>
+          </ul>
+        </nav>
+        <p>Be part of our community:</p>
+        <div class="social-icons">
+          <a href="#"><i class="fa fa-facebook-square"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-whatsapp"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
         </div>
-        
-    </header>
+      </div>
 
-    <main>
-        <span class="close-menu">+</span>
-
-        <section class="heading">
-            <div class="head-text">
-                <h1>Get back new</h1>
-                <p>Explore our shop and all the wanders that it has to offer</p>
-            </div>
-            <div class="circle">
-                <img src="../Image/kindpng_1616862.png" alt="black-girl" width="500px">
-            </div>
-            <div class="circle2"></div>
-            <div class="circle3"></div>
-        </section>
-
-        <!-- COLLECTION -->
-
-        <div class="title">
-            <h2 id="collection">Collection</h2>
-            <p>select the type of item you're looking for</p>
-        </div>
-
-        <section class="collection" id="collection">
-            <div>
-                <h2>Shoes</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, quod qui, modi quia fuga.</p>
-            </div>
-            <div>
-                <h2>Clothes</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, quod qui, modi quia fuga.</p>
-            </div>
-            <div>
-                <h2>Suits</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, quod qui, modi quia fuga.</p>
-            </div>
-        </section>
-
-        <div class="title">
-            <h2>Shop</h2>
-            <p>Let's discover the pleasure of shopping</p>
-        </div>
-
-        <!-- SHOP -->
-
-        <!-- SIDE -->
-        <section class="shop">
-            <section class="side">
-                <section class="filter">
-                
-                    <input type="text" name="research" id="research" class="search-bar" placeholder="Enter keyword">
-                    <button type="button" class="search-btn"><i class="fa fa-search"></i></button>
-
-                    <h3>Filter by price</h3>
-                    <input type="range" min="50" max="5000" class="range">
-                    <button type="button" class="filter-btn">Filter</button>
-                    <p>Price (<b>$50</b> - <b>$5000</b>)</p>
-                </section>
-
-                <section class="sold">
-                    <h3>Items on sold</h3>
-                    <div class="item-sold">
-                        <div class="img-side p1"></div>
-                        <div>
-                        <h4 id="../Image/girl-shoes--.png">Name of the item</h4>
-                        <p><strike>$360.00</strike>  <b>$250.00</b> </p>
-                    </div>
-                    </div>
-                    <div class="item-sold">
-                        <div class="img-side p2"></div>
-                        <div>
-                            <h4 id="../Image/watch-png-25011.png">Name of the item</h4>
-                            <p><strike>$360.00</strike>  <b>$250.00</b> </p>
-                        </div>
-                    </div>
-                    <div class="item-sold">
-                        <div class="img-side p3"></div>
-                        <div>
-                            <h4 id="../Image/women-bag-png-20703.png">Name of the item</h4>
-                            <p><strike>$360.00</strike>  <b>$250.00</b> </p>
-                        </div>
-                    </div>
-                    </div>
-                </section>
-                <section class="sold liked-item">
-                    <h3>Items usually purchased</h3>
-                    <div class="item-sold">
-                        <div class="img-side p4"></div>
-                        <div>
-                            <h4 id="../Image/shoes-17793.png">Name of the item</h4>
-                            <p><strike>$360.00</strike>  <b>$250.00</b> </p>
-                        </div>
-                    </div>
-                    <div class="item-sold ">
-                        <div class="img-side p5"></div>
-                        <div>
-                            <h4 id="../Image/pullover--.png">Name of the item</h4>
-                            <p><strike>$360.00</strike>  <b>$250.00</b> </p>
-                        </div>
-                    </div>
-                    <div class="item-sold ">
-                        <div class="img-side p6"></div>
-                        <div>
-                            <h4 id="../Image/woman-transparent-png-14.png">Name of the item</h4>
-                            <p><strike>$360.00</strike>  <b>$250.00</b> </p>
-                        </div>
-                    </div>
-                    </div>
-                </section>
-
-                <section class="sold">
-                    <h4 class="ADVs">ADVs</h4>
-                    <iframe width="336" height="189" src="https://www.youtube.com/embed/hOWOJ5oVwUQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </section>
-            </section>
-
-            <!-- SHOP CONTENT -->
-        
-        <section class="items">
-            <div class="box">
-                <div class="picture p1" ></div>
-                <h3 id="../Image/girl-short.jpeg">Name of the item</h3>
-                <div class="stars">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-half-o"></i>
-                </div>
-                <p>$250.00</p>
-            </div>
-            <div class="box">
-                <div class="picture p2" ></div>
-                <h3 id="../Image/girl-shoes.png">Name of the item</h3>
-                <div class="stars">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-half-o"></i>
-                </div>
-                <p>$250.00</p>
-            </div>
-            <div class="box">
-                <div class="picture p3" ></div>
-                <h3 id="../Image/pullover.jpg">Name of the item</h3>
-                <div class="stars">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-half-o"></i>
-                </div>
-                <p>$250.00</p>
-            </div>
-            <div class="box">
-                <div class="picture p4" ></div>
-                <h3 id="../Image/girl-pants.jpeg">Name of the item</h3>
-                <div class="stars">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-half-o"></i>
-                </div>
-                <p>$250.00</p>
-            </div>
-            <div class="box">
-                <div class="picture p5" ></div>
-                <h3 id="../Image/women-bag-png-20694.png">Name of the item</h3>
-                <div class="stars">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-half-o"></i>
-                </div>
-                <p>$250.00</p>
-            </div>
-            <div class="box">
-                <div class="picture p6" ></div>
-                <h3 id="../Image/boy-shoes.png">Name of the item</h3>
-                <div class="stars">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-half-o"></i>
-                </div>
-                <p>$250.00</p>
-            </div>
-            
-        </section>
-    </section>
-
-
-    <!-- HOW WAS YOUR EXPERIENCE -->
-
-    <section class="flyer" id="flyer">
-        <h2>Let us know your experience</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, mollitia saepe! Aspernatur error totam voluptas laborum unde, eum, quibusdam nostrum accus. <span class="cut"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, mollitia saepe! Aspernatur error totam voluptas laborum unde, eum, quibusdam nostrum accus.</span></p>
-        <button type="button" id="try">
-            Comment
-            <span></span>
-        </button>
-    </section>
-
-    <!-- QUEST TO QUALITY -->
-
-    <section class="shoes">
-        <div class="side-img">
-            <div class="rectangle"></div>
-            <div class="rectangle1"></div>
-            <div class="rectangle2"></div>
-        </div>
-
-        <div class="side-text">
-            <h2>Quest to quality</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui atque, impedit quibusdam accusantium tenetur voluptatibus tempore cum consectetur expedita accusamus maiores aliquid enim quidem delectus animi ad exercitationem molestiae ab! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui atque, impedit quibusdam accusantium tenetur voluptatibus tempore cum consectetur expedita accusamus maiores aliquid enim quidem delectus animi ad exercitationem molestiae ab!</p>
-        </div>
-    </section>
-
-    <!-- GRID -->
-
-    <section class="grid">
-        <div class="di">
-            <h3>Summer collection</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore harum aperiam tempora, ad esse quo pariatur alias quaerat error neque eius facere optio assumenda, incidunt voluptatum explicabo nemo libero laboriosam.</p>
-        </div>
-        <div class="di"></div>
-        <div class="di"></div>
-        <div class="di"></div>
-        <div class="di"></div>
-        <div class="di"></div>
-    </section>
-
-    
-    </main>
-
-    <footer>
-
-        <div class="one">
-            <ul>
-                <h1 class="logo">RayMode</h1>
-                <div class="short-line"></div>
-                <li><a href="index.html">Home</a></li>
-            <li><a href="#flyer">Comment</a></li>
-            <li><a href="../HTML/About.html">Contact</a></li>
-            <li><a href="logIn.html">LogIn</a></li>
-            </ul>
-
-            <p>Be a part of our community &ThickSpace; 
-                <span><a href="#"><i class="fa fa-facebook-square"></i></a> &ThickSpace;
-                <a href="#"><i class="fa fa-instagram"></i></a> &ThickSpace;
-                <a href="#"><i class="fa fa-whatsapp"></i></a> &ThickSpace; 
-                <a href="#"><i class="fa fa-twitter"></i></a></span>
-            </p>
-        </div>
-        <div class="line"></div>
-        <div class="two">
-            <p class="wrap_text"> <span>"We made passion our raw material" </span> <br> <br>
-            Pellentesque interdum est lobortis purus porttitor fermentum. Vivamus suscipit diam eros, vel faucibus eros laoreet a. Donec porta ipsum viverra dignissim facilisis. Sed id accumsan ex. Curabitur imperdiet ipsum ac blandit faucibus. Etiam ullamcorper consequat tincidunt. Fusce nulla nibh, euismod at quam eget, venenatis convallis libero. Mauris ultricies et dolor eget cursus.</p>
-        <div>
-            <p class="sign-line">Sign up to our newsletter and get 10% off this purchase</p>
-            <input type="text" title="Email" id="Email" placeholder="Enter your email">
-            <button >GET 10% OFF</button>
-            <P>Designed by Raimi . Copyright © All Rights Reserved <br> Powered by Webflow    Style Guide    Licenses    Instructions</P>
-        </div>
+      <div class="newsletter">
+        <p>Sign up to our newsletter and get 10% off this purchase</p>
+        <form>
+          <input type="email" placeholder="Enter your email" required />
+          <button type="submit">Get 10% Off</button>
+        </form>
+        <p class="footer-note">Designed by Raimi. © All Rights Reserved.</p>
+      </div>
     </div>
+  </footer>
 
-    </footer>
-
-    <script src="../Javascript/shop.js"></script>
-
+  <script src="../Javascript/shop.js"></script>
 </body>
 </html>
