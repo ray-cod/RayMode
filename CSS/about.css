@@ -75,7 +75,7 @@ header {
 .logo {
     font-size: 2rem;
     font-weight: bold;
-    color: #6a0dad;
+    color: #000000;
 }
 
 nav ul {
@@ -92,14 +92,14 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #6a0dad;
+    color: #1b1b1b;
 }
 
 .menu-toggle {
   display: none;
   font-size: 1.5rem;
   cursor: pointer;
-  color: #6a0dad;
+  color: #000000;
 }
 
 /* About Section */
@@ -143,7 +143,7 @@ nav ul li a:hover {
 
 .contact-info i {
   margin-right: 0.5rem;
-  color: #6a0dad;
+  color: #000000;
   font-size: 1.3rem;
 }
 
@@ -181,7 +181,7 @@ nav ul li a:hover {
 .contact-form button {
   align-self: flex-start;
   padding: 0.75rem 2rem;
-  background-color: #6a0dad;
+  background-color: #000000;
   color: white;
   border: none;
   border-radius: 6px;
@@ -191,7 +191,7 @@ nav ul li a:hover {
 }
 
 .contact-form button:hover {
-  background-color: #520b99;
+  background-color: #1b1b1b;
 }
 
 /* Rating Section */
@@ -215,7 +215,7 @@ nav ul li a:hover {
 
 .stat-number {
   font-size: 2rem;
-  color: #6a0dad;
+  color: #000000;
   margin: 1rem 0;
 }
 
