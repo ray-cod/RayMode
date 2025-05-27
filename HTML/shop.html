@@ -53,17 +53,24 @@
 
   <!-- Header -->
   <header>
-    <h1 class="logo">RayMode</h1>
-    <nav class="main-nav">
-      <ul>
+    <div class="logo">RayMode</div>
+
+    <div class="menu-toggle" id="menu-toggle">
+        <i class="fa fa-bars"></i>
+    </div>
+
+    <nav id="navbar">
+        <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="#flyer">Comment</a></li>
-        <li><a href="../HTML/About.html">Contact</a></li>
+        <li><a href="#flyer">comment</a></li>
+        <li><a href="About.html">About</a></li>
         <li><a href="logIn.html">LogIn</a></li>
-        <li class="cart-toggle" aria-label="Open cart"><i class="fa fa-shopping-cart"></i></li>
-      </ul>
+        <li style="cursor: pointer; font-size: larger;" class="cart-toggle" aria-label="Open cart">
+          <i class="fa fa-shopping-cart"></i>
+        </li>
+        </ul>
     </nav>
-  </header>
+    </header>
 
   <!-- Main Content -->
   <main>
@@ -140,9 +147,11 @@
 
       <!-- Product Grid -->
       <section class="product-grid">
-        <!-- Repeat this block for each product -->
+        <!-- Card -->
         <div class="product-card">
-          <div class="picture p1"></div>
+          <div class="picture">
+            <img src="../Image/pullover.jpg" alt="Product Name" />
+          </div>
           <h3>Product Name</h3>
           <div class="stars">
             <i class="fa fa-star"></i><i class="fa fa-star"></i>
@@ -151,11 +160,13 @@
           </div>
           <p>$250.00</p>
         </div>
-        <!-- End repeat -->
+        <!-- End Card -->
 
-         <!-- Repeat this block for each product -->
+        <!-- Card -->
         <div class="product-card">
-          <div class="picture p1"></div>
+          <div class="picture">
+            <img src="../Image/girl-shoes--.png" alt="Product Name" />
+          </div>
           <h3>Product Name</h3>
           <div class="stars">
             <i class="fa fa-star"></i><i class="fa fa-star"></i>
@@ -164,11 +175,13 @@
           </div>
           <p>$250.00</p>
         </div>
-        <!-- End repeat -->
+        <!-- End Card -->
 
-        <!-- Repeat this block for each product -->
+        <!-- Card -->
         <div class="product-card">
-          <div class="picture p1"></div>
+          <div class="picture">
+            <img src="../Image/girl-short.jpeg" alt="Product Name" />
+          </div>
           <h3>Product Name</h3>
           <div class="stars">
             <i class="fa fa-star"></i><i class="fa fa-star"></i>
@@ -177,11 +190,13 @@
           </div>
           <p>$250.00</p>
         </div>
-        <!-- End repeat -->
+        <!-- End Card -->
 
-        <!-- Repeat this block for each product -->
+        <!-- Card -->
         <div class="product-card">
-          <div class="picture p1"></div>
+          <div class="picture">
+            <img src="../Image/girl-shoes.png" alt="Product Name" />
+          </div>
           <h3>Product Name</h3>
           <div class="stars">
             <i class="fa fa-star"></i><i class="fa fa-star"></i>
@@ -190,11 +205,13 @@
           </div>
           <p>$250.00</p>
         </div>
-        <!-- End repeat -->
+        <!-- End Card -->
 
-        <!-- Repeat this block for each product -->
+        <!-- Card -->
         <div class="product-card">
-          <div class="picture p1"></div>
+          <div class="picture">
+            <img src="../Image/girl-pants.jpeg" alt="Product Name" />
+          </div>
           <h3>Product Name</h3>
           <div class="stars">
             <i class="fa fa-star"></i><i class="fa fa-star"></i>
@@ -203,11 +220,13 @@
           </div>
           <p>$250.00</p>
         </div>
-        <!-- End repeat -->
+        <!-- End Card -->
 
-        <!-- Repeat this block for each product -->
+        <!-- Card -->
         <div class="product-card">
-          <div class="picture p1"></div>
+          <div class="picture">
+            <img src="../Image/boy-shoes.png" alt="Product Name" />
+          </div>
           <h3>Product Name</h3>
           <div class="stars">
             <i class="fa fa-star"></i><i class="fa fa-star"></i>
@@ -216,11 +235,13 @@
           </div>
           <p>$250.00</p>
         </div>
-        <!-- End repeat -->
+        <!-- End Card -->
 
-        <!-- Repeat this block for each product -->
+        <!-- Card -->
         <div class="product-card">
-          <div class="picture p1"></div>
+          <div class="picture">
+            <img src="../Image/shoes-17793.png" alt="Product Name" />
+          </div>
           <h3>Product Name</h3>
           <div class="stars">
             <i class="fa fa-star"></i><i class="fa fa-star"></i>
@@ -229,11 +250,13 @@
           </div>
           <p>$250.00</p>
         </div>
-        <!-- End repeat -->
+        <!-- End Card -->
 
-        <!-- Repeat this block for each product -->
+        <!-- Card -->
         <div class="product-card">
-          <div class="picture p1"></div>
+          <div class="picture">
+            <img src="../Image/pullover--.png" alt="Product Name" />
+          </div>
           <h3>Product Name</h3>
           <div class="stars">
             <i class="fa fa-star"></i><i class="fa fa-star"></i>
@@ -242,7 +265,7 @@
           </div>
           <p>$250.00</p>
         </div>
-        <!-- End repeat -->
+        <!-- End Card -->
       </section>
     </section>
 
@@ -255,7 +278,9 @@
 
     <!-- Feature Highlight -->
     <section class="highlight">
-      <div class="highlight-image"></div>
+      <div class="highlight-image">
+        <img src="../Image/flyer.jpg" alt="Product Name" />
+      </div>
       <div class="highlight-text">
         <h2>Quest to Quality</h2>
         <p>We’re committed to offering top-quality fashion pieces crafted with attention and care. Discover the details behind every item you love.</p>
@@ -268,11 +293,21 @@
         <h3>Summer Collection</h3>
         <p>Brighten your wardrobe with vibrant styles made for the season.</p>
       </article>
-      <div class="di"></div>
-      <div class="di"></div>
-      <div class="di"></div>
-      <div class="di"></div>
-      <div class="di"></div>
+      <div class="di">
+        <img src="../Image/six.jpg" alt="Product Name" />
+      </div>
+      <div class="di">
+        <img src="../Image/two.jpg" alt="Product Name" />
+      </div>
+      <div class="di">
+        <img src="../Image/three.jpg" alt="Product Name" />
+      </div>
+      <div class="di">
+        <img src="../Image/four.jpg" alt="Product Name" />
+      </div>
+      <div class="di">
+        <img src="../Image/service.jpg" alt="Product Name" />
+      </div>
     </section>
 
   </main>
@@ -312,4 +347,14 @@
   <div class="cart-overlay"></div>
   <script src="../Javascript/shop.js"></script>
 </body>
+
+<script>
+        const toggle = document.getElementById('menu-toggle');
+        const nav = document.getElementById('navbar');
+
+        toggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+            toggle.classList.toggle('open');
+        });
+</script>
 </html>
